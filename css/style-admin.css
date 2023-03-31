@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --height-header: 55px;
+    --width-menu: 260px
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+
+/* AD Index */
+
+.left-menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: var(--width-menu);
+}
+
+.left-menu i {
+    width: 16px;
+    height: 16px;
+}
+
+.logo,
+.header {
+    height: var(--height-header);
+}
+
+.logo * {
+    line-height: var(--height-header);
+}
+
+.right-content {
+    width: calc(100% - var(--width-menu));
+    margin-left: var(--width-menu);
+    background-color: #d0d0d0;
+    min-height: 100vh;
+}
+
+.expand-icon {
+    vertical-align: middle;
+    right: 2rem;
+    position: absolute;
+    line-height: 24px;
+    display: inline-block;
+}
+
+th,
+td {
+    vertical-align: middle;
+}
+
+.dash-card {
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-item>.nav-link:not(.collapsed) .expand-icon {
+    transform: rotate(90deg);
+    transition: transform ease 300ms;
+}
+
+
+/* AD Login */
+
+.body_adlogin {
+    background-color: #e0e0e0;
+}
+
+.ad_login {
+    max-width: 375px;
+    background-image: url(../img/bg/adlogin-bg.png);
+    background-size: contain;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+}
+
+.name_prod {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

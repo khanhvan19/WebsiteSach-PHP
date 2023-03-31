@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.fs-18px {
+    font-size: 1.125em;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+
+/* HEADER */
+
+.top-header {
+    background-color: #d0d0d0;
+    height: 30px;
+}
+
+.top-header .row {
+    line-height: 30px;
+}
+
+.navbar-icon-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.sticky {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 99;
+}
+
+.buffer-sticky {
+    padding-top: 82px!important;
+}
+
+.menu-arrow {
+    right: 0px;
+    position: absolute;
+    padding: 5px;
+}
+
+.menu-item-collap>a.menu-arrow:not(.collapsed) {
+    transform: rotate(90deg);
+    transition: transform ease 300ms;
+}
+
+
+/* MAIN */
+
+main {
+    background-color: #f0f0f0;
+}
+
+.btn-slider-product {
+    width: unset;
+}
+
+
+/* FOOTER */
+
+footer img {
+    max-width: 130px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .img-best-product {
+        max-width: 282px;
+    }
+    .img-detail-product {
+        max-width: 362px;
+        margin-bottom: 1.5rem;
+    }
+    .btn.cn {
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .btn-order {
+        margin-top: 1rem;
+    }
+}
+
+.product-name {
+    line-height: 1.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card-product:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-product:hover img {
+    transform: scale(1.1);
+}
+
+.info-product {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
